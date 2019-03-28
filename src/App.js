@@ -11,7 +11,6 @@ class App extends Component {
         <Person />
       </div>
     );
-    //return React.createElement('div',{className:'App'},React.createElement('h1',null,'hello'));
   }
 }
 
