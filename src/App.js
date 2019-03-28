@@ -14,6 +14,14 @@ class App extends Component {
 
 swithNameHandler = () =>{
   console.log("clicked");
+  //Dont do this
+  //this.state.persons[0].name = 'nananana'
+  this.setState({persons: 
+    [
+      { name : 'New name ',age:28 },
+      { name : 'Manu',age:23 }
+    ]
+  })
 }
   render() {
     return (
