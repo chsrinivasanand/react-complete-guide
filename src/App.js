@@ -5,9 +5,6 @@ import Person from './Person/Person';
 
 class App extends Component {
 
-  // State will be avlaible in components in latets react versions it is avlible in functions too
-  // state will be managed in inside component
-  // if we change state react rerender the component
   state = {
     persons: [
       { name : 'Max',age:28 },
@@ -15,11 +12,14 @@ class App extends Component {
     ]
   }
 
-
+swithNameHandler = () =>{
+  console.log("clicked");
+}
   render() {
     return (
       <div className="App">
         <h1>Hello World</h1>
+        <button onClick={this.swithNameHandler}>Swith name</button>
         <Person name={this.state.persons[0].name} age = {this.state.persons[0].age}/>
         <Person name={this.state.persons[1].name} age ={this.state.persons[1].age}>My hobbies: Racing</Person>
       </div>
