@@ -8,7 +8,8 @@ class App extends Component {
     persons: [
       { name : 'Max',age:28 },
       { name : 'Manu',age:29 }
-    ]
+    ],
+      showPersons: false
   }
 
 swithNameHandler = (nameNew) =>{
@@ -32,6 +33,12 @@ nameChangedHandler = (event) => {
     })
 }
 
+//if we use this structure it will always refers 'this' objects as current class object
+togglePersonHandler = () => {
+    const doesShow = this.state.showPersons ;
+    this.setState({showPersons : !doesShow });
+
+}
 
   render() {
       const style = {
@@ -47,15 +54,22 @@ nameChangedHandler = (event) => {
         <h1>Hello World</h1>
         <button
             style={style}
-            onClick={() => this.swithNameHandler('nenw name!!')}>Swith name</button>
-        <Person 
-          name={this.state.persons[0].name} 
-          age = {this.state.persons[0].age}/>
-        <Person 
-          name={this.state.persons[1].name} 
-          age ={this.state.persons[1].age}
-          click = {this.swithNameHandler.bind(this,"newName!")}
-          changed = {this.nameChangedHandler} >My hobbies: Racing</Person>
+            onClick={this.togglePersonHandler}>Show/Hide</button>
+
+         { //use java script expression to load conditionally
+             this.state.showPersons ?
+                 <div>
+             <Person
+              name={this.state.persons[0].name}
+              age = {this.state.persons[0].age}/>
+            <Person
+              name={this.state.persons[1].name}
+              age ={this.state.persons[1].age}
+              click = {this.swithNameHandler.bind(this,"newName!")}
+              changed = {this.nameChangedHandler} >My hobbies: Racing</Person>
+            </div>
+             : null
+         }
       </div>
     );
   }
