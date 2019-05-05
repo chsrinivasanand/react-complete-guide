@@ -22,6 +22,17 @@ swithNameHandler = (nameNew) =>{
     ]
   })
 }
+
+nameChangedHandler = (event) => {
+    this.setState({persons:
+            [
+                { name : 'Max',age:32 },
+                { name : event.target.value,age:33 }
+            ]
+    })
+}
+
+
   render() {
     return (
       <div className="App">
@@ -33,7 +44,8 @@ swithNameHandler = (nameNew) =>{
         <Person 
           name={this.state.persons[1].name} 
           age ={this.state.persons[1].age}
-          click = {this.swithNameHandler.bind(this,"newName!")}>My hobbies: Racing</Person>
+          click = {this.swithNameHandler.bind(this,"newName!")}
+          changed = {this.nameChangedHandler} >My hobbies: Racing</Person>
       </div>
     );
   }
