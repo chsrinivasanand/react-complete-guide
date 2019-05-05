@@ -12,17 +12,6 @@ class App extends Component {
       showPersons: false
   }
 
-swithNameHandler = (nameNew) =>{
-  console.log("clicked");
-  //Dont do this
-  //this.state.persons[0].name = 'nananana'
-  this.setState({persons: 
-    [
-      { name : nameNew,age:28 },
-      { name : 'Manu',age:23 }
-    ]
-  })
-}
 
 nameChangedHandler = (event) => {
     this.setState({persons:
@@ -31,6 +20,12 @@ nameChangedHandler = (event) => {
                 { name : event.target.value,age:33 }
             ]
     })
+}
+
+deletePersonHandler = (personIndex)=>{
+      const persons = this.state.persons;
+      persons.splice(personIndex,1);
+      this.setState({persons:persons});
 }
 
 //if we use this structure it will always refers 'this' objects as current class object
@@ -55,9 +50,11 @@ togglePersonHandler = () => {
       {
           persons = (
               <div>
-                  {this.state.persons.map(person =>{
-                      return  <Person name={person.name}
-                                      age={person.age}/>
+                  {this.state.persons.map((person,index) =>{
+                      return  <Person
+                          click={() => this.deletePersonHandler(index)} // another way of calling click= {this.deletePersonHandler.bind(this,index)}
+                          name={person.name}
+                          age={person.age}/>
 
                   })}
               </div>
