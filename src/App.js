@@ -34,10 +34,20 @@ nameChangedHandler = (event) => {
 
 
   render() {
+      const style = {
+          backgroundColor: 'White',
+          infont: 'inherit',
+          border: '1px sold blue',
+          padding: '8px',
+          cursor: 'pointer'
+      }
+
     return (
       <div className="App">
         <h1>Hello World</h1>
-        <button onClick={() => this.swithNameHandler('nenw name!!')}>Swith name</button>
+        <button
+            style={style}
+            onClick={() => this.swithNameHandler('nenw name!!')}>Swith name</button>
         <Person 
           name={this.state.persons[0].name} 
           age = {this.state.persons[0].age}/>
