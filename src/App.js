@@ -49,27 +49,31 @@ togglePersonHandler = () => {
           cursor: 'pointer'
       }
 
+      let persons = null;
+
+      if (this.state.showPersons)
+      {
+          persons = (
+              <div>
+                  <Person
+                      name={this.state.persons[0].name}
+                      age = {this.state.persons[0].age}/>
+                  <Person
+                      name={this.state.persons[1].name}
+                      age ={this.state.persons[1].age}
+                      click = {this.swithNameHandler.bind(this,"newName!")}
+                      changed = {this.nameChangedHandler} >My hobbies: Racing</Person>
+              </div>
+
+          );
+      }
     return (
       <div className="App">
         <h1>Hello World</h1>
         <button
             style={style}
             onClick={this.togglePersonHandler}>Show/Hide</button>
-
-         { //use java script expression to load conditionally
-             this.state.showPersons ?
-                 <div>
-             <Person
-              name={this.state.persons[0].name}
-              age = {this.state.persons[0].age}/>
-            <Person
-              name={this.state.persons[1].name}
-              age ={this.state.persons[1].age}
-              click = {this.swithNameHandler.bind(this,"newName!")}
-              changed = {this.nameChangedHandler} >My hobbies: Racing</Person>
-            </div>
-             : null
-         }
+        {persons}
       </div>
     );
   }
