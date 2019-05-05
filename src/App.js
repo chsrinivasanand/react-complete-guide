@@ -23,8 +23,9 @@ nameChangedHandler = (event) => {
 }
 
 deletePersonHandler = (personIndex)=>{
-      const persons = this.state.persons;
-      persons.splice(personIndex,1);
+      //const persons = this.state.persons.slice();  // add slice() it will create new copy so it will handle below mentions bad practice
+    const persons = [...this.state.persons];  // equivalent to above behavior ,moderen way
+    persons.splice(personIndex,1); // in java script object and arrays are referenced type. hence we are altering the actual state of the object  -- bad practice
       this.setState({persons:persons});
 }
 
