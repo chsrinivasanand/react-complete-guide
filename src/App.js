@@ -46,7 +46,8 @@ togglePersonHandler = () => {
 
   render() {
       const style = {
-          backgroundColor: 'White',
+          backgroundColor: 'green',
+          color : 'white',
           infont: 'inherit',
           border: '1px sold blue',
           padding: '8px',
@@ -72,6 +73,8 @@ togglePersonHandler = () => {
               </div>
 
           );
+
+          style.backgroundColor = 'red';
       }
     return (
       <div className="App">
