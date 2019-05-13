@@ -61,7 +61,9 @@ togglePersonHandler = () => {
     return (
 
       <div className={CSSclasses.App}>
-          <Cockpit showPersons ={this.state.showPersons}
+          <Cockpit
+              title ={this.props.appTitle}
+              showPersons ={this.state.showPersons}
               persons = {this.state.persons}
               clicked = {this.togglePersonHandler}
               />
