@@ -1,0 +1,35 @@
+Component life cycle:
+
+Only available in Class-Based component
+
+    constructor()
+    getDerivedStateFromProps()
+    getSnapshotBeforeUpdate()
+    componentDidCatch()
+    componentWillUnmount()
+    shouldComponentUpdate()
+    componentDidUpdate()
+    componentDidMount()
+    render()
+
+Component lifecycle- Creation:
+
+    constructor(props)           ---> Setup State
+            ||
+    getDerivedStateFromProps(props,state)     ---> SysncState
+            ||
+    render()                                  ---> Prepare & Structure your JSX code
+            ||
+    Render Child Components
+            ||
+    componentDidMount()                      ---> DO: Cause Side-Effects    DON'T: Update State(Triggers re-render)
+
+
+
+
+
+
+
+
+
+

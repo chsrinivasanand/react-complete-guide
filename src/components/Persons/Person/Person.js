@@ -1,7 +1,7 @@
 import React from 'react' ;
 import cssClasses from './Person.css' ;
 const person = (props) => {
-
+    console.log('[Person.js] rendering...');
     return (
 
         <div className= {cssClasses.Person} >
