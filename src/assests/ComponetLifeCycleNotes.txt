@@ -28,6 +28,28 @@ Component lifecycle- Creation:
 
 
 
+Component lifecycle -Update
+
+    getDerivedStateFromProps(props,state)         --> Do: Sync State to Props
+                                                      Dont: Cause Side-Effects
+                ||
+    shouldComponentUpdate(nextProps,nextState)      --> May Cancel Updateing process!
+                                                        Do: Decide whether to continue or Not
+                                                        Dont: Cause side-Effects
+                ||
+    render()                                        -->
+                ||
+    Update Child Component Props
+                ||
+    getSnapshotBeforeUpdate(prevProps,prevState)    --> Do:  Last-minute DOM ops
+                ||
+    componentDidUpdate()                            --> Do: Cause side-effects
+                                                    --> Dont: Update State(Triggers re-render)
+
+
+
+
+
 
 
 
