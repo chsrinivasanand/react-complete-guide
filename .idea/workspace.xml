@@ -41,8 +41,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/Cockpit/Cockpit.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="92" selection-start-line="7" selection-start-column="92" selection-end-line="7" selection-end-column="92" />
+            <state relative-caret-position="357">
+              <caret line="21" column="89" selection-start-line="21" selection-start-column="89" selection-end-line="21" selection-end-column="89" />
             </state>
           </provider>
         </entry>
@@ -120,82 +120,7 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="reactAPP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="reactAPP" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="reactAPP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="reactAPP" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="reactAPP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="reactAPP" type="462c0819:PsiDirectoryNode" />
-              <item name="scripts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="reactAPP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="reactAPP" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="reactAPP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="reactAPP" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="assests" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="reactAPP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="reactAPP" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="reactAPP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="reactAPP" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Cockpit" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="reactAPP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="reactAPP" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Persons" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="reactAPP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="reactAPP" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Persons" type="462c0819:PsiDirectoryNode" />
-              <item name="Person" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="reactAPP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="reactAPP" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="containers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="reactAPP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="reactAPP" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="ErrorBoundary" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="PackagesPane" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -247,7 +172,7 @@
       <workItem from="1558779238677" duration="1979000" />
       <workItem from="1558878875713" duration="1788000" />
       <workItem from="1558972259872" duration="4748000" />
-      <workItem from="1559135596199" duration="1447000" />
+      <workItem from="1559135596199" duration="2045000" />
     </task>
     <task id="LOCAL-00001" summary="IDE settings">
       <created>1557254433977</created>
@@ -340,11 +265,25 @@
       <option name="project" value="LOCAL" />
       <updated>1558976388937</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Using useEffect()">
+      <created>1559137133335</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1559137133335</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Controlling useEffect()">
+      <created>1559137622850</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1559137622850</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30586000" />
+    <option name="totallyTimeSpent" value="31184000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="673" y="30" width="694" height="745" extended-state="0" />
@@ -427,7 +366,9 @@
     <MESSAGE value="Understanding component life cycle" />
     <MESSAGE value="Component Creation LifeCycle in Action" />
     <MESSAGE value="Component LifeCycle update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Component LifeCycle update" />
+    <MESSAGE value="Using useEffect()" />
+    <MESSAGE value="Controlling useEffect()" />
+    <option name="LAST_COMMIT_MESSAGE" value="Controlling useEffect()" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.idea/reactAPP.iml">
@@ -556,8 +497,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Cockpit/Cockpit.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="92" selection-start-line="7" selection-start-column="92" selection-end-line="7" selection-end-column="92" />
+        <state relative-caret-position="357">
+          <caret line="21" column="89" selection-start-line="21" selection-start-column="89" selection-end-line="21" selection-end-column="89" />
         </state>
       </provider>
     </entry>

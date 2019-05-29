@@ -18,7 +18,8 @@ const cockpit =(props) => {
     },[props.persons]);
 //useEffect will call on every render cycle if we want to control to execute on
 // particular change we need to pass those as one more attribute
-// we can use useEffect as many time as  
+// we can use useEffect as many time as
+// if we pass empty array [] then useEffect will be call one in one in the creation time
 
 
 
