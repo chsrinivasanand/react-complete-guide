@@ -10,14 +10,12 @@ const cockpit =(props) => {
     {
         console.log('[cockpit.js] useEffect')
 
-       const timer = setTimeout( ()=> {
+       setTimeout( ()=> {
             alert('Saved Data to cloud')
             },1000
         );
         // it runs Before the main useEffect function but after the First render cycle
         return () =>{
-           // cleaning the timer 
-            clearTimeout(timer);
           console.log('[cockpit.js] cleanup work in UseEffect')
         };
 
