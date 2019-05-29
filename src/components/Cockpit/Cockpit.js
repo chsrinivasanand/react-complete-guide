@@ -1,7 +1,16 @@
-import React from 'react'
+import React, {useEffect} from 'react';
+// UseEffect - combines functionality of all these class based lifecycle hooks in one
+// React hook here and both is called hook,
+//
 import CSSclasses from "./Cockpit.css";
 
 const cockpit =(props) => {
+    //run on every render circle.   - similar to commponetDidUpdate/Mount in react component
+    useEffect(()=>
+    {
+        console.log('[cockpit.js] useEffect')
+
+    });
 
     let classes = [] ;
     let btnClass = '';
