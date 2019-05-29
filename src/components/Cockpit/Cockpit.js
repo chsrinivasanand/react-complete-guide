@@ -10,7 +10,17 @@ const cockpit =(props) => {
     {
         console.log('[cockpit.js] useEffect')
 
-    });
+        setTimeout( ()=> {
+            alert('Saved Data to cloud')
+            },1000
+        );
+
+    },[props.persons]);
+//useEffect will call on every render cycle if we want to control to execute on
+// particular change we need to pass those as one more attribute
+// we can use useEffect as many time as  
+
+
 
     let classes = [] ;
     let btnClass = '';
