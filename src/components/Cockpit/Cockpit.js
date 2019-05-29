@@ -14,6 +14,10 @@ const cockpit =(props) => {
             alert('Saved Data to cloud')
             },1000
         );
+        // it runs Before the main useEffect function but after the First render cycle
+        return () =>{
+          console.log('[cockpit.js] cleanup work in UseEffect')
+        };
 
     },[props.persons]);
 //useEffect will call on every render cycle if we want to control to execute on
@@ -21,7 +25,14 @@ const cockpit =(props) => {
 // we can use useEffect as many time as
 // if we pass empty array [] then useEffect will be call one in one in the creation time
 
-
+    useEffect( () =>{
+        console.log('[cockpit.js] 2nd use effect');
+        return () =>
+            {
+                console.log('[cockpit.js] cleanup work in end useeffect')
+            }
+        }
+    );
 
     let classes = [] ;
     let btnClass = '';

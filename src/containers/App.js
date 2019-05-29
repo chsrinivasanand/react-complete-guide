@@ -16,7 +16,8 @@ class App extends Component {
       { id: 'sdfg', name : 'Max',age:28 },
       { id: 'dfgh', name : 'Manu',age:29 }
     ],
-      showPersons: false
+      showPersons: false,
+      showCockPit: true
   }
 
 
@@ -87,12 +88,18 @@ togglePersonHandler = () => {
     return (
 
       <div className={CSSclasses.App}>
-          <Cockpit
+          <button onClick={()=>{
+              this.setState({showCockPit:false})
+          }}>Remove CockPit</button>
+
+          {this.state.showCockPit ?
+              (<Cockpit
               title ={this.props.appTitle}
               showPersons ={this.state.showPersons}
               persons = {this.state.persons}
               clicked = {this.togglePersonHandler}
-              />
+              />)
+              :null }
           {persons}
       </div>
 
