@@ -10,16 +10,18 @@ const cockpit =(props) => {
     {
         console.log('[cockpit.js] useEffect')
 
-        setTimeout( ()=> {
+       const timer = setTimeout( ()=> {
             alert('Saved Data to cloud')
             },1000
         );
         // it runs Before the main useEffect function but after the First render cycle
         return () =>{
+           // cleaning the timer 
+            clearTimeout(timer);
           console.log('[cockpit.js] cleanup work in UseEffect')
         };
 
-    },[props.persons]);
+    },[]);
 //useEffect will call on every render cycle if we want to control to execute on
 // particular change we need to pass those as one more attribute
 // we can use useEffect as many time as
