@@ -1,0 +1,7 @@
+
+
+    shouldCompnentUpdate() passed   ---->                    render() is called
+                                                                    ||
+    Fasted than real DOM            ---->      Old Virtual DOM           Re-Rendered Virtual DOM    <--  render() doesnt really update the real DOM
+                                                            < ---Comparison--->
+                                                            Differences? ---> Update the real DOM   (Only update the changes)
